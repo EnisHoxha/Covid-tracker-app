@@ -1,6 +1,11 @@
-# Project Run
+# Instlling dependencies
+npm install
 
-npm install 
+# Run the project
 npm start
+
+# Access it by browser
+http://localhost:3000/
+
 
 
