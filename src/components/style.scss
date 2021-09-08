@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("../fonts/Muli-Regular.ttf");
+}
+@font-face {
+  font-family: "Muli-SemiBold";
+  src: url("../fonts/Muli-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Muli-Bold";
+  src: url("../fonts/Muli-Bold.ttf");
+}
+
+$warningColor: #ff9800;
+$errorColor: #ec314b;
+$successColor: #4caf50;
+
+body {
+  background-color: #f4f6f8;
+}
+.kontenti {
+  position: relative;
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  font-family: "Muli-Regular";
+  .karta {
+    background-color: #fff;
+    border-radius: 10px;
+    // box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    //   0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #666666;
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.6em;
+      margin-bottom: 0;
+    }
+    small {
+      font-size: 0.7em;
+    }
+
+    .error {
+      color: $errorColor;
+    }
+
+    .warning {
+      color: $warningColor;
+    }
+
+    .success {
+      color: $successColor;
+    }
+  }
+
+  .shteti {
+    font-weight: bolder;
+    color: #060808 !important;
+  }
+
+  select {
+    background: transparent;
+    border: 1px solid #bbb;
+    color: #333333;
+    display: inline-block;
+
+    font-weight: bolder;
+    font-size: 15px;
+    outline: none;
+    height: 40px;
+    border-radius: 3px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+
+    p {
+      font-size: 1.2em;
+
+      a {
+        text-decoration: none;
+        color: $successColor;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .footer {
+      padding-top: 80px !important;
+    }
+  }
+}
