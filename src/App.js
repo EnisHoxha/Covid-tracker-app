@@ -17,13 +17,13 @@ export class App extends Component {
   async componentDidMount() {
     const response = await fetchSpecificCountries();
     this.setState({ data: response });
-    {
-      toast.info("Loading...", {
-        position: "bottom-left",
-        draggable: true,
-        autoClose: 2000,
-      });
-    }
+
+    toast.info("Loading...", {
+      position: "bottom-left",
+      draggable: true,
+      autoClose: 2000,
+    });
+
     // console.log(response);
   }
 
